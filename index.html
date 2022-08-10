@@ -5,10 +5,13 @@
         <title>IASA 2022 MATH C visualizer</title>
     </head>
     <body>
-    <h1>2022 SA</h1>
-    <h2>실습 페이지</h2>
-    <br><br>
+    <div>
+        <h1>2022 SA</h1>
+        <h2>실습 페이지</h2>
+        <br><br>
     <hr>
+    </div>
+    
     <p>IASA</p>
     <strong style="color:red;">TEST</strong>
     <!--주석처리 명령어-->
@@ -21,5 +24,56 @@
         <mark>Mark</mark> <em>Italic</em>
         <strong>p tag 안</strong>
     </p>
+
+    <h1> 이미지 표시</h1>
+    <img src="images/i1.png"
+    alt="깃헙 하드웨어"
+    width="30"/>
+    <br>
+
+    <a href="https://www.wolframalpha.com/" target="_blank">
+        울프람알파
+    </a>
+
+    <ul>
+        <li>시간복잡도</li>
+        <li>미적분</li>
+        <li>표준편차</li>
+        <li>삼각형</li>
+        <li>경사하강법</li>
+    </ol>
+
+    <input name="text" type="text" 
+    placeholder="함수 입력"
+    maxlength="10"/><br><br>
+    
+    <input name="bi" type="button" 
+    value="Search"/><br><br>
+    
+    <input name="an" type="range" 
+    max="100" min="0"
+    step="10"/><br><br>
+
+    <select name="style">
+        <option value="graph" selected>그래프</option>
+        <option value="table">표</option>
+        <option value="idk">산포도</option>
+    </select><br><br>
+
+    <textarea name="comment"
+    rows="10" cols="10" placeholder="comment"></textarea>
     </body>
+
+    <form action="example.php" method="POST">
+        <input type="text" placeholder="NAME"
+        name="name2"/>
+        <br>
+        <select name="type">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <br>
+        <input type="submit" value="전송">
+    </form>
 </html>
